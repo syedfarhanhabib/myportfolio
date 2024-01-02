@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+}
+
+*::selection {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+:root {
+    --accent: #0f4bff;
+    --depth: #79a1fc;
+    --light: #f5f5f5;
+    --dark: #050505;
+}
+
+main {
+    background-color: var(--dark);
+}
+
+#pg1 {
+    color: var(--light);
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--dark);
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 4vw;
+    padding-top: 10vh;
+    width: 100%;
+}
+.leftcirc{
+    position: absolute;
+    top: 37vh;
+    left: -4vw;
+    filter: blur(300px);
+    z-index: 1;
+    background-color: var(--depth);
+    width: 30vw;
+    height: 15vh;
+}
+#left {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    /* position: fixed; */
+}
+
+#name {
+    font-size: 7vw;
+    font-weight: 500;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+#designation {
+    margin: 2vh 0;
+    font-size: 3vw;
+    font-weight: 200;
+    letter-spacing: -3px;
+    line-height: 1;
+    font-style: italic;
+}
+
+#titles h4 {
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+#titles h4 i {
+    font-size: 2vw;
+    font-weight: 100;
+    display: none;
+}
+
+#right {
+    width: 60%;
+    transition: all ease 2s;
+    /* gap: 10vh; */
+}
+
+#about {
+    gap: 1vw;
+}
+#about #titl{
+    margin-bottom: 3vh;
+}
+#titl {
+    /* margin-bottom: 3vh; */
+    font-size: 2vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 1.5vw;
+    letter-spacing: -1px;
+    font-weight: 200;
+}
+
+#exp, #edu {
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+#card {
+    display: flex;
+    gap: 2vw;
+}
+
+#cardleft {
+    width: 9vw;
+}
+
+#cardleft h4 {
+    font-size: 1.5vw;
+    letter-spacing: -1px;
+    font-weight: 200;
+}
+
+#cardright {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1vh; */
+}
+
+#cardright h2 {
+    font-size: 2vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+#cardright h3 {
+    font-style: italic;
+    font-size: 1.5vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+#cardright p {
+    font-size: 1.5vw;
+    letter-spacing: -1px;
+    font-weight: 200;
+}
+
+#buttons {
+    margin-top: 1vh;
+    gap: .5vw;
+    display: flex;
+    align-items: center;
+}
+
+#btn {
+    font-size: 1vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 90px;
+    background-color: var(--light);
+    color: var(--dark);
+}
